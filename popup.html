@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IRCTC Auto Fill</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h2>IRCTC Credentials</h2>
+        <input type="text" id="irctc-login" placeholder="IRCTC Username">
+        <input type="password" id="irctc-password" placeholder="IRCTC Password">
+
+        <h2>Journey Details</h2>
+        <input type="text" id="from-station-input" placeholder="From Station">
+        <ul id="from-station-list" class="dropdown-list"></ul>
+        <input type="text" id="destination-station-input" placeholder="To Station">
+        <ul id="destination-station-list" class="dropdown-list"></ul>
+        <input type="date" id="journey-date">
+        <input type="text" id="train-no" placeholder="Train Number">
+        <select id="journey-class">
+            <option value="">Select Class</option>
+        </select>
+        <select id="journey-quota">
+            <option value="">Select Quota</option>
+        </select>
+
+        <h2>Passenger Details</h2>
+        <div id="passenger-1">
+            <input type="text" id="passenger-name-1" placeholder="Passenger Name">
+            <input type="number" id="age-1" placeholder="Age">
+            <select id="passenger-gender-1">
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select>
+            <select id="passenger-berth-1">
+                <option value="">Berth Preference</option>
+                <option value="LB">Lower</option>
+                <option value="MB">Middle</option>
+                <option value="UB">Upper</option>
+                <option value="SL">Side Lower</option>
+                <option value="SU">Side Upper</option>
+            </select>
+            <select id="passenger-nationality-1">
+                <option value="IN">Indian</option>
+            </select>
+        </div>
+
+        <h2>Contact Details</h2>
+        <input type="tel" id="mobileNumber" placeholder="Mobile Number">
+        <input type="email" id="email" placeholder="Email">
+
+        <div class="button-container">
+            <button id="load-btn-1">Load</button>
+            <button id="submit-btn">Save</button>
+            <button id="connect-btn">Book</button>
+            <button id="clear-btn">Clear</button>
+        </div>
+    </div>
+    <footer>github - keshavdadhichb</footer>
+    <script src="location.js"></script>
+    <script src="data.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>
